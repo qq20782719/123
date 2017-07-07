@@ -7,7 +7,7 @@ echo "欢迎使用 SSR一键脚本"
 
 echo "输入1开始安装bbr"
 echo "输入2开始安装ssr"
-echo "输入.打补丁"
+echo "输入3打补丁"
 while :; do echo
 	read -p "请选择： " choice
 	if [[ ! $choice =~ ^[1-3]$ ]]; then
@@ -18,13 +18,13 @@ while :; do echo
 done
 
 if [[ $choice == 1 ]];then
-	wget http://107.150.2.53/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+	chmod 777 /root/123/bbr.sh && sh /root/123/bbr.sh
 fi
 
 if [[ $choice == 2 ]];then
-	wget http://107.150.2.53/ssr.sh && chmod +x ssr.sh && ./ssr.sh
+	chmod +x /root/123/ssr.sh && sh /root/123/ssr.sh
 fi
 
 if [[ $choice == 3 ]];then
-	wget http://107.150.2.53/123.sh && chmod +x 123.sh && ./123.sh
+	chmod +x /root/123/123.sh && sh /root/123/123.sh
 fi
